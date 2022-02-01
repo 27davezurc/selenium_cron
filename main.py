@@ -46,8 +46,8 @@ WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, r'//*[@id=
 # put in first and last name
 # old: firstname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[5]/div[2]/div[3]/div[1]/label').text
 # new: 
-firstname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[2]/div[2]/div/div[1]/div').text
-lastname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[2]/div[2]/div/div[2]/div').text
+firstname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[2]/div[2]/div/div[1]/label').text
+lastname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[2]/div[2]/div/div[2]/label').text
 fnIn = driver.find_element_by_id("signature_first_name")
 fnIn.send_keys(firstname)
 lnIn = driver.find_element_by_id("signature_last_name")
