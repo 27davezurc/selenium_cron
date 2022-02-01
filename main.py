@@ -44,8 +44,10 @@ WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, r'//*[@id=
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, r'//*[@id="confirm"]'))).click()
 
 # put in first and last name
-firstname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[5]/div[2]/div[3]/div[1]/label').text
-lastname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[5]/div[2]/div[3]/div[2]/label').text
+# old: firstname = driver.find_element_by_xpath(r'/html/body/div/div[2]/div[3]/div[5]/div[2]/div[3]/div[1]/label').text
+# new: 
+firstname = driver.find_element_by_xpath(r'//*[@id="signature_first_name"]').text
+lastname = driver.find_element_by_xpath(r'//*[@id="signature_last_name"]').text
 fnIn = driver.find_element_by_id("signature_first_name")
 fnIn.send_keys(firstname)
 lnIn = driver.find_element_by_id("signature_last_name")
