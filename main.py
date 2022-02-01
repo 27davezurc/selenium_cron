@@ -36,7 +36,7 @@ WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, r'/html/bo
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, r'/html/body/div/div[2]/div[3]/div[4]/div[2]/fieldset[2]/div[2]/button[3]'))).click()
 # no
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, r'/html/body/div/div[2]/div[3]/div[4]/div[2]/fieldset[3]/div[2]/button[3]'))).click()
-# no
+# new question: no
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, r'/html/body/div/div[2]/div[3]/div[4]/div[2]/fieldset[4]/div[2]/button[3]'))).click()
 
 # confirm both
